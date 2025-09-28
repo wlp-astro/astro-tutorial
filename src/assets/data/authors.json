@@ -1,0 +1,7 @@
+{
+    "john_doe": {
+        "name": "John Doe",
+        "email": "john.doe@example.com",
+        "bio": "John Doe is a software engineer at Example Inc."
+    }
+}

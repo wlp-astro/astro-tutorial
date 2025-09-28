@@ -1,0 +1,15 @@
+---
+// Component Script (JavaScript)
+const ourName = "Glenn Paulin";
+const { greeting, name } = Astro.props;
+---
+
+<!-- Component Template (HTML + JS Expressions) -->
+<h1>{ourName}</h1>
+<slot />
+<h2>{greeting}, {name}</h2>
+<style>
+  h1 {
+    color: red;
+  }
+</style>
