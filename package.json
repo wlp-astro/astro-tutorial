@@ -4,6 +4,7 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
+    "start": "serve dist/",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -14,6 +15,7 @@
     "@fontsource/lato": "^5.2.7",
     "@tailwindcss/vite": "^4.1.13",
     "astro": "^5.14.1",
+    "serve": "^14.2.5",
     "tailwindcss": "^4.1.13"
   }
 }

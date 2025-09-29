@@ -1,0 +1,27 @@
+---
+import authorsData from "../../assets/data/authors.json";
+
+export function getStaticPaths() {
+  return Object.keys(authorsData).map((author) => ({
+    params: { author },
+    props: { authorData: authorsData[author] },
+  }));
+}
+
+const { authorData } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{authorData.name}</title>
+  </head>
+  <body>
+    <h1>{authorData.name}</h1>
+    <p>Email: {authorData.email}</p>
+    <p>Bio: {authorData.bio}</p>
+  </body>
+</html>
